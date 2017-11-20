@@ -1,0 +1,80 @@
+// out: null
+
+@import "_variables";
+@import "_helpers";
+
+
+// Bootstrap Components
+
+@import "@{bootstrap}variables";
+@import "@{bootstrap}mixins";
+@import "@{bootstrap}normalize";
+@import "@{bootstrap}scaffolding";
+@import "@{bootstrap}grid";
+@import "@{bootstrap}type";
+@import "@{bootstrap}responsive-utilities";
+@import "@{bootstrap}utilities";
+@import "@{bootstrap}modals";
+@import "@{bootstrap}navs";
+@import "@{bootstrap}buttons";
+@import "@{bootstrap}popovers";
+@import "@{bootstrap}alerts";
+@import "@{bootstrap}close";
+@import "@{bootstrap}panels";
+@import "@{bootstrap}component-animations";
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: @regular;
+    color: @base_color;
+    background: @white;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    &:focus {
+        outline: none;
+    }
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Vendor libs import
+==============================*/
+@import (less) "libs/font-awesome.css";
+
+
+
+/* Project Elements
+==============================*/
+@import "_elements";
+
+
+
+/* Pages import
+==============================*/
+@import "pages/home";
+
+
+
+
